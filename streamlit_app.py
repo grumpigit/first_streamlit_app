@@ -56,8 +56,6 @@ def get_fruit_load_list():
 
 #add a button to load the fruit
 if streamlit.button('Get Fruit Load List'):
-    
-    my_cur = my_cnx.cursor()
     my_data_rows = get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
 
